@@ -1,0 +1,518 @@
+/**************IMPORTANTE****************/
+/*EGUO LA TRACCIA ED INIZIO CON LA FORMATTAZIONE PER DESKTOP,
+CALCOLO IL BREAKPOINT DEL DESKTOP A 1200PX .FACCIO PRIMA TUTTO E POI SOTTO FACCIO I MEDIA SCREEN 
+PER MOBILE E TABLET*/
+
+/*Il progetto è visionabile anche direttamente a questo link https://sabrinacinque.github.io/progettoSettimana5Epicode/*/
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+header{
+    background-color: #FFC017;
+    margin-top: -2em;
+}
+
+#firstSectionHeader{
+    background-color: #FFC017;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding:25px 0;
+    padding-top: 50px;
+    z-index: 999;
+    transition: background-color 1s ease; /* Aggiungo una transizione per l'effetto del cambio backgroundcolor e del tasto verde */
+
+}
+
+#headerContainer {
+    width: 80%; /* Occupa l'80% della larghezza del firstSectionHeader */
+    display: flex;
+    justify-content: space-between;
+}
+
+#firstSectionHeader.white {
+    background-color: white;
+}
+
+#firstSectionHeader.white nav ul a:last-child {
+    background-color: #1a8917;
+}
+
+
+
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+
+nav ul a{
+    padding-left: 2em;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: black;
+    cursor: pointer;
+}
+
+nav ul a:last-child{
+    border-radius: 99em;
+    color: white;
+    background-color: black;
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+#secondSectionHeader{
+    padding-top: 5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#stayCurious{
+    margin-left: 10%;
+    width: 60%;
+}
+
+
+svg{
+height: 105%;
+}
+
+#svgContainer{
+    position: static;
+    overflow:hidden;
+}
+
+#stayCurious h1{
+    font-family: "Spectral", serif;
+    font-size: 90px;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+#stayCurious p{
+    font-size: 24px;
+    padding-bottom: 2em;
+    width:50%;
+}
+
+#stayCurious button{
+    font-size:20px;
+    padding:8px 50px;
+    color:white;
+    background-color:#191919;
+    border-radius: 99em;
+    cursor: pointer;
+}
+
+#stayCurious button:hover{
+    background-color:#000000;
+}
+
+
+#yellowLine{ /*mi serviva questo div di distacco tra header e main per dare la sesazione che la nav cambiasse colore prima della fine dell'header*/
+    width: 100%;
+    background-color: #FFC017;
+    height: 2em;
+    border-bottom: 0.5px solid black;
+    margin-top: -2em;
+}
+
+/*******************************FINE HEADER***************************/
+
+/*******************************INIZIO MAIN***************************/
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+main{
+    margin:2em auto;
+    width: 80%;
+    height: 100vh;
+    color: #6B6B6B;
+}
+
+
+/**********************************PRIMA SECTION MAIN***********************/
+
+#trending,figcaption,h3,h2,#stayCurious p{
+ color: black;
+}
+
+#trending{
+    display: flex;
+    align-items: center;
+}
+
+#trending img{
+    padding-right: 0.5em;
+}
+
+#trending h3{
+    font-weight: bolder;
+}
+
+.imgFirstMainSection {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.imgFirstMainSection img {
+    border-radius: 50%;
+    margin-right: 0.7em;
+    width: 2em;
+}
+
+.imgFirstMainSection .notRound,#secondSectionMain .left .firstASecondSection .notRound {
+    border-radius: 10%;
+}
+
+figcaption{
+    font-weight:bold ;
+    font-size: 0.85em;
+}
+
+.firstSectionMain{
+    width: 25%;
+    margin-left: 5%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.firstSectionMain h3{
+    font-size: 1em ;
+    font-weight:bold ;
+    padding-bottom: 0.5em;
+}
+
+.star{
+    display: flex;
+    align-items: center;
+}
+.star img{
+    padding-left: 0.2em;
+}
+
+
+.firstSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+/******************************FINE PRIMA SECTION MAIN***************************/
+
+/******************************INIZIO SECONDA SECTION MAIN***************************/
+
+#sectionTwo{
+    margin-top: 5em;
+}
+
+
+.firstASecondSection{
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.6em;
+}
+
+#secondSectionMain div img{
+    border-radius: 50%;
+    margin-right: 0.7em;
+    width: 2em;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 0.7em;
+}
+
+p{
+    color: #6B6B6B;
+}
+
+#secondSectionMain .star2 img{
+    width: 1.5em;
+    padding-left: 0.5em;
+}
+
+.star2 div{
+    display: flex;
+    align-items: center;
+
+}
+
+.star2{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 0;
+}
+
+#secondSectionMain .star2 .bookmark{
+    width: 2em;
+}
+
+#secondSectionMain .imgSquare{
+    width: 60%;
+    height:100%;
+    margin-left: 2em;
+    border-radius: 0%;
+}
+#secondSectionMain div{
+    margin-bottom: 0;
+}
+
+#secondSectionMain{
+    display: flex;
+    margin-bottom: 2em;
+    justify-content: space-between;
+}
+
+.left{
+    width:100%;
+}
+
+.right{
+    width:20%;
+}
+
+#sectionTwo{
+    display: flex;
+}
+
+#mainSectionSecondSection{
+    width: 65%;
+}
+
+/*******************************fine section articoli del main**********************/
+/********************************inizio section aside del main*******************************/
+aside {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    height: 100%;
+    top:7em;
+}
+
+
+ aside h3{
+    font-weight: bold;
+ }
+
+
+#firstSectionAside{
+    width:80%;
+    margin-bottom: 5em;
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#firstSectionAside a {
+    color:#6B6B6B;
+    margin-left:1em;
+    margin-bottom: 2em;
+    font-size: 0.9em;
+}
+
+
+#secondSectionAside{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#secondSectionAside a{
+    color:#6B6B6B;
+    margin-right:1.5em;
+    font-size: 0.9em;
+    margin-bottom: 1.5em;
+}
+
+
+/************************************FINE CSS PER DESKTOP******************************************/
+
+/***IMPORTANTE:ESSENDO PARTITA DALLA VISUALIZZAZIONE DESKTOP,
+    MI SONO TROVATA A LAVORARE MEGLIO CON MAX-WIDTH ANZICHE' MIN-WIDTH   **********************************/
+
+
+
+@media screen and (max-width:1400px){
+    #stayCurious h1{
+        font-size:80px;
+    }
+
+    #stayCurious p{
+        width:80%;
+    }
+}
+
+@media screen and (max-width:1200px){
+    #stayCurious h1{
+        font-size:70px;
+    }
+}
+
+
+/**********INIZIO MEDIA SCREEN PER VERSIONE TABLET da 768px a 992px***********/
+
+
+
+
+
+@media screen and (max-width:992px){
+    #stayCurious h1{
+        font-size: 60px;
+        margin-top: 2em;
+    }
+
+
+    #stayCurious{
+        margin-left: 10%;
+        width: 150%;
+    }
+    
+    #stayCurious p{
+        font-size: 20px;
+        padding-bottom: 2em;
+    }
+
+    .firstSectionMain{
+        width:45%;
+    }
+
+
+    #sectionTwo{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #mainSectionSecondSection{
+        order:2;
+        width: 100%;
+
+    }
+
+    #secondSectionMain .imgSquare{  
+        margin-left: auto;
+        display: block;
+    }
+
+    
+
+    aside{
+        order:1;
+        flex-direction:column;
+        width: 100%;
+        margin-bottom: 1em;
+        position: static;
+    }
+
+
+
+    #firstSectionAside{
+        flex-direction: row;
+        margin-bottom: 2em;
+    }
+
+    .asideLink{
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul a{
+        font-size: 1em;
+        padding: 4px 8px;
+    }
+
+    #headerContainer a img{
+        width:70%;
+    }
+
+    #sectionTwo,#mainSectionSecondSection{
+        margin-right:0 ;
+    }
+    
+
+}
+
+
+@media screen and (max-width:768px){
+
+    body{
+        font-size: 12px;
+    }
+
+    #stayCurious h1{
+        padding-top: 1m;
+        font-size: 50px;
+    }
+
+    .left{
+        width:70%;
+    }
+
+    .left a p{
+        padding-bottom: 1em;
+    }
+
+
+  
+
+}
+
+
+
+
+/*****************************************MEDIA SCREEN PER MOBILE******************************************/
+
+@media screen and (max-width:576px){
+
+   
+
+    svg{
+        display: none;
+    }
+
+    #stayCurious button{
+        margin-bottom: 3em;
+    }
+
+
+
+    nav ul a:nth-of-type(1),
+    nav ul a:nth-of-type(2),
+    nav ul a:nth-of-type(3) {
+       display: none;
+    }
+
+    .firstSectionMain{
+        width: 100%;
+    }
+
+    #secondSectionMain .imgSquare{  
+        margin-left: auto;
+        width:90%;
+    }
+
+    #secondSectionMain{
+        font-size: 0.8em;
+    }
+  
+
+    
+}
+
